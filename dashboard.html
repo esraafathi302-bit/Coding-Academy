@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Coding Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadUser()">
+
+<!-- Header -->
+<header class="header">
+    <img src="https://i.postimg.cc/jqnk1BCk/Screenshot.png" class="logo" alt="Logo">
+    <h1 class="neon">Coding Academy</h1>
+</header>
+
+<!-- Main Section -->
+<main class="main-section">
+    <h1 id="welcome" class="neon"></h1>
+    <div class="nav-buttons">
+        <a href="courses.html" class="btn">Go To Courses</a>
+        <button class="btn" onclick="logout()">Logout</button>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2026 Coding Academy. All rights reserved.</p>
+    <p>Contact us: info@codingacademy.com</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+// Logout function
+function logout() {
+    localStorage.removeItem("user");
+    window.location.href = "login.html";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF‑8">
+    <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
+    <title>Courses - Coding Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <img src="https://i.postimg.cc/jqnk1BCk/Screenshot.png" class="logo" alt="Logo">
+    <h1 class="neon">Coding Academy</h1>
+</header>
+
+<main class="main-section">
+    <h2 class="neon">Courses</h2>
+
+    <select id="filter" onchange="filterCourses()">
+        <option value="all">All</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+    </select>
+
+    <div class="courses">
+        <!-- Front‑End Playlist -->
+        <a class="card beginner" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfnXKjZ9UcT5BVt9x19BlItX" target="_blank">
+            <img src="https://i.postimg.cc/9MYt3t5W/Code-with-programming-languages-Sticker-for-Sale-by-jwhijazi.jpg">
+            <h3>Front‑End (HTML, CSS, JS)</h3>
+        </a>
+
+        <!-- Back‑End (PHP) Playlist -->
+        <a class="card intermediate" href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAxXTPncg0W4lhVS32LO_xtQ" target="_blank">
+            <img src="https://i.postimg.cc/tCMdH4f4/Professional-website.jpg">
+            <h3>Back‑End (PHP Full Playlist)</h3>
+        </a>
+
+        <!-- Python Playlist -->
+        <a class="card beginner" href="https://www.youtube.com/playlist?list=PLlVHoHHccp28Q_4XoHAFuNsi92wBeI3Fw" target="_blank">
+            <img src="https://i.postimg.cc/rsp4vBNm/Language-Logos.jpg">
+            <h3>Python Full Playlist</h3>
+        </a>
+
+        <!-- C++ Playlist -->
+        <a class="card advanced" href="https://www.youtube.com/playlist?list=PLLwK93hM93Z13TRzPx9JqTIn33feefl37" target="_blank">
+            <img src="https://i.postimg.cc/rsp4vBNm/Language-Logos.jpg">
+            <h3>C++ Full Playlist</h3>
+        </a>
+    </div>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 Coding Academy. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

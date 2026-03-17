@@ -1,0 +1,149 @@
+ /* Reset some default styles */
+body, h1, h2, p, input, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #0d0d0d, #001f2f);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* الشمال */
+    gap: 15px;
+    padding: 20px;
+}
+
+.logo {
+    width: 60px;
+}
+
+/* Title - عادي Bold */
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+/* Neon effect */
+.neon {
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+}
+
+/* Main Section */
+.main-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Form */
+.form-box, .user-form {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.7);
+    box-shadow: 0 0 20px cyan;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select {
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+button, .btn {
+    background: cyan;
+    padding: 10px 20px;
+    margin: 5px;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background: #fff;
+    color: cyan;
+}
+
+/* Courses Section */
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid cyan;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px cyan;
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    border-top: 1px solid #222;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-box, .user-form {
+        width: 90%;
+    }
+
+    .header {
+        justify-content: center; /* الشاشات الصغيرة نخليهم في النص */
+        flex-wrap: wrap;
+    }
+}
